@@ -326,3 +326,18 @@ footer {
 .social-icons:hover {
   color: #0bd7fa;
 }
+/*footer @media*/
+
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container {
+    width: 95vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+}
