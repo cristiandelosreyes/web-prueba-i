@@ -1,0 +1,328 @@
+/*general*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--text-titulo);
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+/*colores*/ /*fuentes*/
+:root {
+  --color-primary: #0bd7fa;
+  --color-secundary: hsl(249, 87%, 38%);
+  --bg-color: #f7f7f7;
+  --light-color: #fff;
+  --dark-color: #000;
+  --color-a: #f8931f;
+  --color-b: #48ca95;
+  --text-titulo: serious;
+  --text-nav: dinotoons;
+  --text-barra: iam;
+  --text-uni: toon;
+}
+/*fuentes fonts*/
+
+@font-face {
+  font-family: fuente1;
+  src: url(font/MySoul-Regular.ttf);
+}
+
+@font-face {
+  font-family: serious;
+  src: url(font/almostserious.ttf);
+}
+@font-face {
+  font-family: almosseriousaccent;
+  src: url(font/almostseriousaccent.ttf);
+}
+@font-face {
+  font-family: dinotoons;
+  src: url(font/DINOTOONS\ DEMO.ttf);
+}
+@font-face {
+  font-family: iam;
+  src: url(font/i\ am\ a\ serious\ man.ttf);
+}
+@font-face {
+  font-family: KB;
+  src: url(font/KBSeriouslyIntoHer.ttf);
+}
+@font-face {
+  font-family: lemonadebold;
+  src: url(font/Lemonade\ Bold\ Demo.ttf);
+}
+@font-face {
+  font-family: lemonaderegular;
+  src: url(font/Lemonade\ Regular\ Demo.ttf);
+}
+@font-face {
+  font-family: lemonadethin;
+  src: url(font/Lemonade\ Thin\ Demo.ttf);
+}
+@font-face {
+  font-family: mysoul;
+  src: url(font/MySoul-Regular.ttf);
+}
+@font-face {
+  font-family: toon;
+  src: url(font/Toon\ Demo.ttf);
+}
+
+/*header*/
+a {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+header {
+  background-image: url(img/banner1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0px 0px 25px var(--color-primary);
+  margin: 10px;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  border-radius: 100px;
+  margin-right: 10px;
+}
+nav a {
+  color: var(--bg-color);
+  text-decoration: none;
+  margin: 5px;
+  margin-left: 10px;
+}
+.home {
+  color: var(--color-primary);
+  font-family: var(--text-nav);
+  font-size: 22px;
+}
+.home:hover {
+  color: var(--color-a);
+  border-radius: 5px;
+  background-color: var(--dark-color);
+  padding: 0px;
+  font-size: 26px;
+  transition: color 1.9s;
+  transition: font-size 1.2s;
+}
+nav a:hover {
+  color: var(--color-a);
+  border-radius: 5px;
+  background-color: var(--dark-color);
+  padding: 0px;
+  font-size: 26px;
+  transition: color 1.9s;
+  transition: font-size 1.2s;
+}
+.menur {
+  display: none;
+}
+
+header a img {
+  border-radius: 100px;
+}
+h2 {
+  margin-left: 20px;
+}
+select {
+  font-size: 29px;
+  background-color: transparent;
+  border: var(--dark-color);
+  color: var(--color-primary);
+  width: 90px;
+  font-family: var(--text-uni);
+}
+select:hover {
+  font-size: 29px;
+  background-color: var(--dark-color);
+  border: var(--dark-color);
+  color: var(--color-a);
+  font-size: 32px;
+  border-radius: 6px;
+  transition: color 1.9s;
+  transition: font-size 1.2s;
+}
+
+.fondo1 {
+  background-image: url(/fondo1.jpg);
+}
+
+.container {
+  background-image: url(img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0px 0px 25px var(--color-primary);
+}
+.titulo1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  padding: 100px 20px 40px 20px;
+  color: white;
+  border: 1px solid var(--color-primary);
+  border-bottom: none;
+  box-shadow: 20px 20px none 20px var(--color-primary);
+}
+.frase {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: gold;
+  font-size: 80px;
+  margin-top: 850px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0px 0px 25px var(--color-primary);
+}
+/*-seccion media@-*/
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .home {
+    display: none;
+  }
+
+  .titulo1 {
+    color: gold;
+    font-size: 50px;
+  }
+  .frase {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+  }
+  .menur {
+    display: flex;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .nav-link {
+    display: none;
+  }
+  select {
+    display: none;
+  }
+  .container {
+    border: t;
+    box-shadow: none;
+  }
+  .container {
+    border: none;
+    box-shadow: none;
+  }
+  .titulo1 {
+    border: none;
+    box-shadow: none;
+  }
+  .star {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*footer*/
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-container {
+  width: 1000px;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.logo-footer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 500px;
+}
+.logo-footer img {
+  border-radius: 100px;
+  border: 1px solid var(--color-primary);
+}
+.input-suscrib {
+  margin-left: 18px;
+}
+.footer-card {
+  width: 450px;
+  margin-top: 70px;
+  padding: 20px;
+}
+.footer-card h5 {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  width: 1300px;
+  color: var(--light-color);
+  border-top: 1px solid var(--light-color);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.button-footer {
+  width: 60px;
+  background-color: var(--color-primary);
+  border-radius: 6px;
+}
+.button-footer:hover {
+  width: 80px;
+  background-color: var(--color-a);
+  transition: 1s;
+}
+.social-icons {
+  font-size: 20px;
+}
+.social-icons:hover {
+  color: #0bd7fa;
+}
