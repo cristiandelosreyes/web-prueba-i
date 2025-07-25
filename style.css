@@ -148,9 +148,10 @@ nav a:hover {
 @media (max-width: 800px) {
   .container {
     display: flex;
-    gap: 60px;
+    gap: 30px;
     align-items: center;
     padding: 10px;
+    min-height: 10vh;
   }
   nav a {
     display: none;
